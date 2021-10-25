@@ -1,0 +1,29 @@
+.our-features-section {
+  background-color: white;
+  width: 100%;
+  .our-features {
+    @include marginruler;
+    padding-top: 7em;
+    .header-text{
+        color: black;
+    }
+    .all-features{
+        margin-top: 4em;
+        margin-left: 5em;
+        display: flex;  flex-wrap: wrap;
+        .feature{
+
+            text-align: center;
+            min-width: 200px; width: 250px;padding: 0 3em 5em 0em;
+            display: flex;flex-direction: column;
+            strong{
+                color: $faintgrey;   
+            }
+            p{
+                color: $lightgreycolor;
+            }
+        }
+    }
+  }
+  
+}

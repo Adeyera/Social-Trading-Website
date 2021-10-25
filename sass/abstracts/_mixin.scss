@@ -1,0 +1,26 @@
+@mixin card {
+    .card{
+        padding: 1.5em;
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        background-color: white;
+        margin-bottom: 2em;
+        border-radius: 2em;
+        margin-right: 2em;
+        justify-content: space-evenly;
+    }
+
+};
+@mixin subtext {
+    article {
+        font-size: 1rem;
+        color: $lightbluecolor;
+    }
+}
+@mixin marginruler{
+    width: 80%;
+    margin: 2rem auto;
+}
+
+

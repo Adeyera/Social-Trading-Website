@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vanilla</title>
+    <style>
+        body {
+            text-align: center;
+            /* padding-top:50%; */
+            backface-visibility: hidden;
+        }
+        h1 {
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-name: moveInLeft;
+        }
+        h2 {
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        animation-name: moveInTop;
+        }
+        @keyframes moveInLeft{
+            0%{
+                opacity: 0;
+                transform: translateX(-100px) 
+            }
+            80% {
+                transform: translateX(10px)
+            }
+            100%{
+                opacity: 1;
+                transform: translateX(0) rotate(180deg)
+            }
+        }
+        @keyframes moveInTop {
+            0%{
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            /* 80% {
+                transform: translateY(-20px);
+            } */
+            100% {
+                transform: translateY(0);
+            }
+        }
+        .bg {
+            clip-path: circle(80.7% at 39% 100%);
+            background-color: blue;
+            width: 100%;
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+
+    </div>
+    <nav>
+        <!-- Toggle  -->
+
+    </nav>
+    <h1>OUTLINE</h1>
+    <h2>this is where the line starts</h2>
+    <button></button>
+</body> 
+</html>

@@ -1,0 +1,20 @@
+.why-us-section {
+  @include marginruler;
+  height: 90vh;
+  .show-reason {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // flex: 0 1 calc(50%-5rem);
+    @include subtext;
+    article {
+      width: 40%;
+    }
+    div {
+      width: 40%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "a_social_trading_website",
+  "version": "1.0.0",
+  "description": "A platform for traders to trade crypto",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss css/style.css --w"
+  },
+  "keywords": [
+    "crypto"
+  ],
+  "author": "toluwani adeyera",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

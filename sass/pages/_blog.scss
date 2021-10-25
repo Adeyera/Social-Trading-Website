@@ -1,0 +1,28 @@
+.news {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  // display: grid;grid-template-columns: repeat(1fr,2);
+  background-color: white;
+  // grid-template-columns: ifr ifr ifr;
+  flex-wrap: wrap;
+  // flex-shrink: 0;
+  // flex-grow: 0;
+  padding: 4em 8em;
+  justify-content: space-between;
+
+  &__card {
+    flex-basis: calc(33% - 1rem);
+    box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.155);
+    min-width: 300px;
+
+    height: 420px;
+    img {
+      width: 100%;
+    }
+    a {
+      color: blue;
+    }
+  }
+
+}

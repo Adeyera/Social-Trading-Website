@@ -1,0 +1,32 @@
+button,.btn {
+    // width: 120px;
+    color: black;
+    background-color:$buttoncolor;
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn-filled {
+    background-color: $buttoncolor;
+    a {
+        color: black;
+        font-weight: 600;
+    }
+    &:hover{
+        background-color: $buttonvisit;
+    }
+}
+.btn-outlined {
+    background-color: $bodycolor;
+    border:solid 2px $buttoncolor;
+    color: $textcolor;
+    a{
+        color: $textcolor;
+        font-weight: 600;
+    }
+    &:hover{
+        background-color: #f8f8f84c;
+    }
+    
+}

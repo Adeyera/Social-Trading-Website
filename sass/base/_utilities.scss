@@ -1,0 +1,47 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: rgb(77, 77, 77);
+}
+li{
+    list-style:none;
+}
+.header-text {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.header-text{
+    position: relative;
+    padding-bottom: 3rem;
+    color: $textcolor;
+   
+}
+.header-text::before{
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    content: "";
+    width: 1.5em;
+    height: 3px;
+    border-radius: 40px;
+    background-color: $overlinecolor;
+}
+// for the header text that is center 
+#overline-center::before{
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-70%);
+    content: "";
+    width: 1.5em;
+    height: 3px;
+    border-radius: 40px;
+    background-color: $overlinecolor;
+}
+.top-text {
+    font-weight: 600;
+    font-size: 1rem;
+}
+

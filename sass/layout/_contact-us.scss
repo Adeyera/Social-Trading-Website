@@ -1,0 +1,50 @@
+.contact-us {
+    min-height: 100vh;
+    @include marginruler;
+    .header-text{
+        margin-top: 3em;
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+        margin-left: 5em;
+        justify-content: space-between;
+        form{
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            // flex-basis: 40%;
+            input,textarea {
+                border:none;
+                background-color: #f6f6f6;
+                &:focus {
+                    outline: none;
+                }
+                
+            }
+            input{
+                border-radius: 15px;
+            }
+            #name{
+                padding: 1em 6em 1em 2em;
+                margin-bottom:2em ;
+            }
+            #email {
+                padding: 1em 6em 1em 2em;
+                margin-bottom:2em ;
+            }
+            #comment {
+                padding: 1em 6em 1em 2em;
+                margin-bottom:2em ;
+                border-radius: 15px
+            }
+            
+        }
+        .hero{
+            flex-basis: 50%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

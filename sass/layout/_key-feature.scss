@@ -1,0 +1,25 @@
+.key-features {
+  @include marginruler;
+  //   height: 100vh;
+  margin-bottom: 10em;
+  text-align: center;
+  .features {
+    display: flex;
+    // min-width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include card;
+    .card {
+      min-width: 200px;
+      width: 220px;
+      .card-icon {
+        text-align: center;
+        margin: 0 auto 0;
+        width: 5em;
+        height: 5em;
+        background-color: cadetblue;
+        border-radius: 50%;
+      }
+    }
+  }
+}

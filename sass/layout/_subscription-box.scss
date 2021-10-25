@@ -1,0 +1,32 @@
+.subscribe-box {
+    width: 100%;
+    margin-top: -3.3em;
+    // height: 40vh;
+    background-color: $overlinecolor;
+
+    &>div{
+        padding: 3em;
+        @include marginruler;
+        display: flex;
+        // flex: 0 1 ;
+        align-items: center;justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+        h2{
+            color: white;
+            flex-basis: 45%;
+        }
+        .input input{
+            padding:0.8em 6em 0.8em 2em ;
+            border-radius: 30px; margin-right: 1em;
+            border: none;
+            &:focus {
+                outline: none;
+            }
+        }
+        
+    }
+
+    
+
+}
