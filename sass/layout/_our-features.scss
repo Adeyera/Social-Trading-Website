@@ -3,6 +3,7 @@
   width: 100%;
   .our-features {
     @include marginruler;
+    margin:0 auto;
     padding-top: 7em;
     .header-text{
         color: black;

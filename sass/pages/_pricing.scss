@@ -1,0 +1,41 @@
+.pricing-1{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    .overlap__1,.overlap__2{width: 100%;height: 50%;}
+    .overlap__1{
+        height: 60%;
+        background: rgb(241, 244, 250);
+        // height: 40vh;
+    }
+    .overlap{
+        // width: 80%;
+        // margin: 0 auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        .plan-cards{
+            display: flex;
+            flex-direction: row;
+            // align-items: center;
+            justify-content: center;
+            // width: 80%;
+            .price-card{
+                width:25%;
+                min-width: 250px;
+                background: white;
+                height: 300px;
+                border-radius: 22px;
+                box-shadow: -2px -5px 15px rgba(48, 48, 48, 0.249);
+                padding: 2em ;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+        }
+        position:absolute;
+
+    }
+}

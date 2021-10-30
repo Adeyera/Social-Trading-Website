@@ -5,15 +5,39 @@
     box-sizing: border-box;
 }
 main{width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-image: url("../../img/home-bg-1.svg")  ;
      background-repeat: no-repeat; background-size: contain; 
 }
-header{
+#faq {
     min-height: 100vh;
-    @include marginruler;
+    .showcase {
+      h1 {
+        font-weight: 600;
+      }
+    }
+  }
+
+header{
+    width: 100%;
+    // 
 }
-.navbar {
+#blog,#pricing,#feature{
+    height: 80vh;
+    // background: crimson;
+    
+  }
+.navbar{
+    // text-align: center;
+    width: 100%;
+    padding: 0.8rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav-wrapper{
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,6 +57,7 @@ header{
     }
     .nav-logo img {
         width: 100px;
+        
     }
     button:first-child{
         margin-right: 0.7em;
@@ -41,10 +66,11 @@ header{
 
 }
 .showcase {
-    padding-top: 6rem;
+    @include marginruler;
+    padding-top: 5rem;
     display: flex; flex-direction: row;
     img {
-        width: calc(50% - 6rem);
+        width: calc(50% - 6rem);transform: translateY(-20%);
     }
     .text-show{
         width:40%;
@@ -56,6 +82,7 @@ header{
             padding: 1rem 0;color: $lightbluecolor; 
             font-weight: 400;
             line-height: 1.3rem;
+            
         }
         h1{position: relative;
             &::before{
@@ -63,7 +90,7 @@ header{
                     top: -1rem;
                     left:0;
                     content: "";
-                    width: 1.5em;
+                    width: 2rem;
                     height: 3px;
                     border-radius: 40px;
                     background-color: $buttoncolor;

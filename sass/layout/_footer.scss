@@ -1,17 +1,21 @@
 footer{
+    background-color: white;
     background-image: url("../../img/footer-wave-bg.svg");
     background-size: cover;
-    height: 60vh;
+    min-height: 50vh;
     .footer{
-        padding-top:17em;
+        padding-top:3em;
+        
         @include marginruler;
         .links{
             a{
-                font-weight: 500;
+                font-weight: 400;
             }
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            width: 80%;
+            justify-content: space-between;
             .contact-area {
                 p{
                     font-weight: 600;
@@ -37,7 +41,7 @@ footer{
         }
         &>p {
             padding: 0.5em;
-            font-size: 1.2em;
+            font-size: 0.8rem;
             font-weight: 600;
         }
     }

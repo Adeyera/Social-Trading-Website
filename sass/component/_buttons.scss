@@ -2,13 +2,14 @@ button,.btn {
     // width: 120px;
     color: black;
     background-color:$buttoncolor;
-    padding: 0.8em 2em;
+    padding: 0.6em 1.8em;
     border: none;
     border-radius: 30px;
     cursor: pointer;
 }
 .btn-filled {
     background-color: $buttoncolor;
+    border:solid 1px $buttoncolor;
     a {
         color: black;
         font-weight: 600;
@@ -19,7 +20,7 @@ button,.btn {
 }
 .btn-outlined {
     background-color: $bodycolor;
-    border:solid 2px $buttoncolor;
+    border:solid 1px $buttoncolor;
     color: $textcolor;
     a{
         color: $textcolor;
@@ -28,5 +29,5 @@ button,.btn {
     &:hover{
         background-color: #f8f8f84c;
     }
-    
+    padding: 0.6em 1.8em;
 }

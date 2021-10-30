@@ -15,14 +15,21 @@
     flex-basis: calc(33% - 1rem);
     box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.155);
     min-width: 300px;
-
+    margin-bottom: 1.8em;
     height: 420px;
+    border-radius: 22px;
     img {
       width: 100%;
+      border-radius: 22px;
     }
     a {
       color: blue;
     }
+    &--sub{
+      color:rgb(108, 108, 108)
+    }
   }
 
 }
+
+

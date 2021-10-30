@@ -1,0 +1,106 @@
+.feature-main {
+  background: rgb(239, 245, 255);
+}
+.feature-nav {
+  background: rgb(255, 255, 255);
+  margin: 0px 0;
+  width: 100%;
+  .nav-wrapper {
+    .nav-item {
+      .nav-link {
+        color: black;
+      }
+    }
+  }
+}
+.feature-showcase {
+  margin-top: -1rem;
+  // img{
+  //   width: 300px;
+  //   height: auto;
+  // }
+  .text-show {
+    h1 {
+      color: $bodycolor;
+    }
+    h3 {
+      color: $faintgrey;
+      font-size: 0.8rem;
+    }
+  }
+}
+.feature-description {
+  min-height: 300vh;
+  background: rgb(239, 245, 255);
+  background-image: url("../../img/bg-feature.svg");
+  background-size: cover;
+  // background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  // background-position: -100px;
+  
+  .text-show {
+    padding-top: 4rem;
+    h1 {
+      text-align: center;
+      font-weight: 500;
+    }
+    h1 {
+      position: relative;
+      // display: inline;
+      padding-left: 15em;
+      margin: 0 auto;
+      font-size: 1.5rem;
+      &::before {
+        position: absolute;
+        bottom: -1rem;
+        // padding-left: 15em;
+        left: calc(50%+ 1.5em);
+        content: "";
+        width: 2rem;
+        height: 3px;
+        border-radius: 40px;
+        background-color: $buttoncolor;
+      }
+    }
+  }
+  article{
+    display: grid;
+    .feature-list {
+      text-align: right;
+      grid-column: 3;
+      padding: 2rem;
+      width: 300px;
+      margin-top: 2em;
+      background-color: rgba(255, 255, 255, 0.18);
+      border-radius: 30px;
+      &:nth-child(even){
+        grid-column: 2;
+        text-align: left;
+        & {.title::after{left:0}}
+      }
+      .title {
+        color: white;
+        position: relative;
+        &::after {
+          bottom: 0rem;
+          position: absolute;
+          // padding-left: 15em;
+          right: 0;
+          content: "";
+          width: 2rem;
+          height: 3px;
+          border-radius: 40px;
+          background-color: $buttoncolor;
+        }
+      }
+    .body {
+      font-size: 0.7rem;
+      padding-top: 1rem;
+      color: #F9F9F9;
+      font-weight: 400;
+    }
+    }
+  }
+  }
+  
